@@ -9,7 +9,7 @@ public class Program1 {
 		int length=name.length();
 		if(length>=3)
 		{
-			System.out.println("Hello "+name+" How are you?!! Hope your doing well");
+			System.out.println("Hello "+name+" How are you?!! Hope your doing well!!Lets check whether GIT is working or not");
 		}
 		else
 		{
