@@ -1,0 +1,64 @@
+GIT HUB STEP BY STEP Procedure.
+
+Ubuntu 18.04
+ 
+ Install GIT
+ 
+			sudo apt-get install git
+			
+			
+Configuration
+
+configfure your username
+		git config –global user.name “your_username”
+		
+configure your mailid
+		git config –global user.email “your_emailid”
+		
+
+Login to your Github account and create a repository.
+
+Creating local repository 
+'	
+		mkdir repositoryname
+		cd repositoryname
+		
+Initialize the GIT
+
+		git init
+		
+Setup the remote 
+
+		git remote add origin  https://github.com/your_username/myproject.git
+		 
+		 (now the remote configuration is completed)
+		 
+Adding files
+
+		git add filemname
+		git add .  (adding multiple file)
+		git commit -m"message" (for commiting file)
+		
+Pushing the file to master github
+
+		git push origin master
+		
+		
+Cloning the project to local
+
+		git remote add origin  https://github.com/your_username/myproject.git
+		
+Seeing the changes made by other 
+
+		git pull origin master
+
+
+
+
+Branches Merge Tagging Restore
+		
+		
+		
+
+		
+		
