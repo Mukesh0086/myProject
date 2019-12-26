@@ -1,0 +1,14 @@
+{
+  "name": "testfile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "noorjan",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^6.2.2"
+  }
+}
