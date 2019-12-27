@@ -108,6 +108,36 @@ public class Util {
 	
 	}
 	
+	public static void binarySearch(char []array,char key)
+	{
+		int first=0;
+		int last=array.length-1;
+		int mid=0;		
+		
+		while(mid!=-1)
+		{
+			mid=(first+last)/2;
+			if(array[mid]==key)
+			{
+				int index=mid;
+				mid=-1;
+				System.out.println(index);;
+				
+			}
+			if(array[mid]>key)
+			{
+				first=0;
+				last=mid;
+			}
+			if(array[mid]<key)
+			{
+				first=mid+1;
+				last=array.length-1;
+			}
+		}
+		
+	}
+	
 	public static void main(String[] args) {
 		boolean anagram=anagram("earth", "heart");
 		System.out.println(anagram);
@@ -122,15 +152,31 @@ public class Util {
 		{
 			System.out.println(s);
 		}
-		int arr[]={10,20,30,40,50};
+		int arr[]={10,20,30,40,50,60};
 		try {
 			binarySearch(arr, 10);
 		}
 		catch(Exception e)
 		{
-			
+			//Handling Array Index out of bound exception;
 		}
+		char array[]={'a','b','c','d','e','f'};
+		try {
+			binarySearch(array, 'a');
+		}
+		catch(Exception e)
+		{
+			//Handling Array Index out of bound exception;
+		}
+		
+		
 	}
+	public static void quicksort(int []arr)
+	{
+		
+	}
+	
+	
 	
 
 }
