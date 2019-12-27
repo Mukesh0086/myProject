@@ -76,6 +76,37 @@ public class Util {
 		
 		return special;
 	}
+	public static void binarySearch(int arr[],int key) throws Exception
+	{
+		int first=0;
+		int last=arr.length-1;
+		int mid=0;		
+		
+		while(mid!=-1)
+		{
+			mid=(first+last)/2;
+			if(arr[mid]==key)
+			{
+				int index=mid;
+				mid=-1;
+				System.out.println(index);;
+				
+			}
+			if(arr[mid]>key)
+			{
+				first=0;
+				last=mid;
+			}
+			if(arr[mid]<key)
+			{
+				first=mid+1;
+				last=arr.length-1;
+			}
+		}
+		
+		
+	
+	}
 	
 	public static void main(String[] args) {
 		boolean anagram=anagram("earth", "heart");
@@ -90,6 +121,14 @@ public class Util {
 		for(Integer s:specialOutput)
 		{
 			System.out.println(s);
+		}
+		int arr[]={10,20,30,40,50};
+		try {
+			binarySearch(arr, 10);
+		}
+		catch(Exception e)
+		{
+			
 		}
 	}
 	
